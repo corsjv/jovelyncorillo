@@ -85,6 +85,16 @@ header{
     letter-spacing:0.5px;
 }
 
+.highlight{
+    color:#64ffda;
+    font-weight:600;
+}
+
+.highlight-secondary{
+    color:#38bdf8;
+    font-weight:600;
+}
+
 /* HERO */
 .hero{
     height:100vh;
@@ -96,9 +106,9 @@ header{
 
 /* SECTIONS */
 section{
-    padding:120px 40px;
+    padding:40px 20px;
     max-width:1200px;
-    margin:auto;
+    margin:0 auto 80px auto;
 }
 
 /* TITLE */
@@ -106,7 +116,7 @@ section{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:15px;
+    gap:20px;
 }
 
 .section-heading span{
@@ -118,7 +128,7 @@ section{
 }
 
 .section-heading .line{
-    width:70px;
+    width:80px;
     height:1px;
     background:#233554;
 }
@@ -334,6 +344,94 @@ section{
     text-align:center;
 }
 
+.social-icon{
+    color:#ccd6f6;
+    font-size:20px;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.social-icon:hover{
+    color:#64ffda;
+}
+
+.resume-btn{
+    margin-left:20px;
+    padding:5px 10px;
+    border:1px solid #64ffda;
+    border-radius:5px;
+    color:#64ffda;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.resume-btn:hover{
+    background:#64ffda;
+    color:#0f172a;
+}
+
+/* FEATURED PROJECT */
+.project{
+    display:grid;
+    grid-template-columns:60% 40%;
+    align-items:center;
+    margin-bottom:120px;
+    position:relative;
+}
+
+.featured-image img{
+    width:100%;
+    border-radius:8px;
+    display:block;
+}
+
+/* RIGHT SIDE */
+.featured-content{
+    position:relative;
+    margin-left:-120px;
+    z-index:5;
+}
+
+.featured-label{
+    color:#64ffda;
+    margin-bottom:10px;
+}
+
+.featured-content h3{
+    color:#ccd6f6;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+/* OVERLAPPING CARD */
+.featured-description{
+    background:#112240;
+    padding:30px;
+    border-radius:8px;
+
+    box-shadow:
+    0 10px 30px rgba(2,12,27,.7);
+}
+
+.featured-description p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* TECHNOLOGY LIST */
+.featured-tech{
+    margin-top:25px;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.featured-tech span{
+    color:#64ffda;
+    font-size:15px;
+}
+
 /* MOBILE */
 @media(max-width:768px){
 
@@ -374,6 +472,23 @@ section{
 .about-image img,
 .image-frame{
     height:320px;
+}
+
+@media(max-width:768px){
+
+    .project{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .featured-content{
+        margin-left:0;
+    }
+
+    .featured-content h3{
+        font-size:28px;
+    }
+
 }
 
 }
