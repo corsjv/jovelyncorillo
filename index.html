@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -23,7 +24,16 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="social-icon">
+    <i class="fab fa-linkedin-in"></i>
+    <a href="Jovelyn Corillo_CV.pdf" target="_blank" class="resume-btn">
+    Resume
+</a>
+</a>
         </ul>
+
+      
 
         <div class="burger">
             <span></span>
@@ -38,10 +48,10 @@
 <section id="home" class="hero">
     <div class="hero-content">
         <h1>Hello, I'm</h1>
-        <h2>JOVELYN CORILLO</h2>
+        <h2><span class="highlight">JOVELYN CORILLO</span></h2>
 
         <p>
-A graduate of Bachelor of Science in Information Technology with over 6 years and 7 months of experience at Accenture. During my time here, I have taken on multiple roles including Content Moderator for 3 years, and currently as a Quality Analyst for almost 3 years. Alongside this, I contribute as a video editor, supporting creative needs in our projects.  
+A graduate of <span class="highlight-secondary">Bachelor of Science in Information Technology</span> with over 6 years and 7 months of experience at Accenture. During my time here, I have taken on multiple roles including <span class="highlight-secondary">Content Moderator</span> for 3 years, and currently as a <span class="highlight-secondary">Quality Analyst</span> for almost 3 years. Alongside this, I contribute as a video editor, supporting creative needs in our projects.  
         </p>
 
         <a href="#contact" class="btn">Contact Me</a>
@@ -120,7 +130,7 @@ A graduate of Bachelor of Science in Information Technology with over 6 years an
         <div class="experience-content">
 
             <div id="accenture" class="exp-box">
-                <h3><span>Quality Auditing Associate Accenture Inc |Accenture Inc.</span></h3>
+                <h3><span class="highlight">Quality Auditing Associate Accenture Inc |Accenture Inc.</span></h3>
                 <li>Assess the quality of agent reviews to ensure compliance with client guidelines.</li>
                 <li>Meet QA audit goals for volume and quality.</li>
                 <li>Develop and maintain a thorough understanding of the client's business objectives and workflows.</li>
@@ -129,19 +139,19 @@ A graduate of Bachelor of Science in Information Technology with over 6 years an
                 <li>Conduct coaching sessions for agents to improve their performance and skills.</li>
 
            <br> 
-<h3><span>Transaction Processing Associate |Accenture Inc.</span></h3>
+<h3><span class="highlight">Transaction Processing Associate |Accenture Inc.</span></h3>
 <li>Perform data entry and research in various systems and tracking tools.</li>
 <li>Apply knowledge of processes and related systems to assist in identifying, assessing, and resolving issues.</li>
 <li>Assess and resolve standard and non-standard issues.</li>
 <li>Seek advice and escalate issues.</li>
 </div>
             <div id="competitive-it" class="exp-box">
-                <h3>System Developer | Competitive I.T Solutions</h3>
+                <h3><span class="highlight">System Developer | Competitive I.T Solutions</span></h3>
               <li>Developed a management system incorporating CRUD functionalities using the C# language </p></li>
             </div>
 
             <div id="freelancer" class="exp-box">
-                <h3>Invitation Designer | Affiliate Marketer | CapCut or Content Creator </h3>
+                <h3><span class="highlight">Invitation Designer | Affiliate Marketer | CapCut or Content Creator</span></h3>
                 <li>Created personalized digital invitations for various events</li>
                 <li>Produced and edited engaging videos for product promotion</li>
                 <li>Designed and published creative templates for CapCut based on platform tasks</li>p>
@@ -166,12 +176,17 @@ A graduate of Bachelor of Science in Information Technology with over 6 years an
         <!-- LEFT MENU -->
         <div class="project-menu">
 
-           <button class="project-btn active"
+            <button class="project-btn active"
+                data-target="project">
+                project
+            </button>
+
+           <button class="project-btn"
                 data-target="thumbnails">
                 thumbnails
             </button>
             
-            <button class="project-btn active"
+            <button class="project-btn"
                 data-target="posters">
                 Posters
             </button>
@@ -195,10 +210,46 @@ A graduate of Bachelor of Science in Information Technology with over 6 years an
         </div>
 
         <!-- RIGHT CONTENT -->
-        <div class="project-content">
+
+<!-- APPSHEET-->
+   <section class="project">
+
+    <div class="featured-image">
+        <img src="images/cosaversappsheet.png" alt="Project">
+    </div>
+
+    <div class="featured-content">
+
+        <p class="featured-label">
+    
+        </p>
+
+        <h3>
+            <span class="highlight"> Cosavers Timesheet</span>
+        </h3>
+
+        <div class="featured-description">
+
+            <p>
+                Employee timesheet and payroll portal for cosavers. mini grocery serving retail staff.
+                Secure login system providing access
+                to automated time clock tracking, real-time gross earnings calculations, overtime metrics, and administrative data management.
+                Built on Google Apps Script and Google Sheets with a mobile-responsive interface and automated spreadsheet report generation.
+            </p>
+
+        </div>
+
+        <div class="featured-tech">
+            <span>Google Apps Script</span>
+            <span>Google Sheets</span>
+        </div>
+
+    </div>
+
+</section>
 
 <!-- THUMBNAILS-->
-            <div class="project-gallery active" id="thumbnails">
+            <div class="project-gallery" id="thumbnails">
 
                 <img src="images/thumbnail1.png" alt="thumbnails">
                 <img src="images/thumbnail12.png" alt="thumbnails">
@@ -206,7 +257,7 @@ A graduate of Bachelor of Science in Information Technology with over 6 years an
             </div>
 
             <!-- POSTERS -->
-            <div class="project-gallery active" id="posters">
+            <div class="project-gallery" id="posters">
 
                 <img src="images/poster1.png" alt="Poster">
                 <img src="images/poster2.png" alt="Poster">
@@ -267,8 +318,8 @@ A graduate of Bachelor of Science in Information Technology with over 6 years an
     <div class="contact-container">
          <p>I will be happy to receive your contact if you want to talk about new opportunities.
             Write me, and I will reply as soon as I see your message.</p>
-        <p><span>Email:</span> jovelyn.corillo19@gmail.com</p>
-        <p><span>Contact #:</span>
+        <p><span class="highlight">Email:</span> jovelyn.corillo19@gmail.com</p>
+        <p><span class="highlight">Contact #:</span>
        +63 977 4648 764</p>
     </div>
 
